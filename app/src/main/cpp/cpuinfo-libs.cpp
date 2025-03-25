@@ -11,7 +11,7 @@
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_initLibrary(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_initLibrary(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize()) {
         LOGI("Error initialising library");
         return true;
@@ -20,7 +20,7 @@ Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_initLibrary(JNIEnv *env, j
 
 extern "C"
 JNIEXPORT jstring JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getCpuName(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_getCpuName(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize()) {
         return env->NewStringUTF("");
     }
@@ -30,7 +30,7 @@ Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getCpuName(JNIEnv *env, jo
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_hasArmNeon(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_hasArmNeon(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize()) {
         return false;
     }
@@ -39,7 +39,7 @@ Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_hasArmNeon(JNIEnv *env, jo
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL1dCaches(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_getL1dCaches(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize() || cpuinfo_get_l1d_caches_count() == 0) {
         return nullptr;
     }
@@ -57,7 +57,7 @@ Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL1dCaches(JNIEnv *env, 
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL1iCaches(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_getL1iCaches(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize() || cpuinfo_get_l1i_caches_count() == 0) {
         return nullptr;
     }
@@ -75,7 +75,7 @@ Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL1iCaches(JNIEnv *env, 
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL2Caches(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_getL2Caches(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize() || cpuinfo_get_l2_caches_count() == 0) {
         return nullptr;
     }
@@ -93,7 +93,7 @@ Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL2Caches(JNIEnv *env, j
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL3Caches(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_getL3Caches(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize() || cpuinfo_get_l3_caches_count() == 0) {
         return nullptr;
     }
@@ -111,7 +111,7 @@ Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL3Caches(JNIEnv *env, j
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_com_kl3jvi_sysinfo_data_provider_CpuDataProvider_getL4Caches(JNIEnv *env, jobject thiz) {
+Java_com_monitor_deviceinfo_data_provider_CpuDataProvider_getL4Caches(JNIEnv *env, jobject thiz) {
     if (!cpuinfo_initialize() || cpuinfo_get_l4_caches_count() == 0) {
         return nullptr;
     }

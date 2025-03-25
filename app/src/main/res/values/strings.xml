@@ -1,11 +1,12 @@
 <resources>
-    <string name="app_name">SysInfo</string>
+    <string name="app_name">Device &amp; System Info</string>
     <string name="tab_text_1">Dashboard</string>
     <string name="tab_text_2">Device</string>
     <string name="tab_text_3">System</string>
     <string name="tab_text_4">Storage</string>
     <string name="tab_text_5">CPU</string>
     <string name="tab_text_6">Battery</string>
+    <string name="tab_text_7">Screen</string>
     <string name="coreNumber">Core %s</string>
     <string name="mhzString">%s Mhz</string>
     <string name="ram_text">%s / %s</string>

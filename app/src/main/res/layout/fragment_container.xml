@@ -4,7 +4,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kl3jvi.sysinfo.view.activities.MainActivity">
+    tools:context="com.monitor.deviceinfo.view.activities.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
 

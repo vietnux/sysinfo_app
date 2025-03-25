@@ -11,5 +11,7 @@ dependencyResolutionManagement {
         // Warning: this repository is going to shut down soon
     }
 }
-rootProject.name = "Sysinfo"
-include ':app'
+rootProject.name = "Device &amp; System Info"
+include ':app', ':nativetemplates'
+project(':nativetemplates').projectDir = new File(rootDir, 'googleads-mobile-android-native-templates-master/googleads-mobile-android-native-templates-master/nativetemplates/')
+

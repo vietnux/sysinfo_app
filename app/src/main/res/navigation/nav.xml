@@ -6,20 +6,20 @@
 
     <fragment
         android:id="@+id/dashboard"
-        android:name="com.kl3jvi.sysinfo.view.fragments.DashboardFragment"
+        android:name="com.monitor.deviceinfo.view.fragments.DashboardFragment"
         android:label="Dashboard">
 
     </fragment>
 
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="com.kl3jvi.sysinfo.view.fragments.SettingsFragment"
-        android:label="SettingsFragment" />
+        android:name="com.monitor.deviceinfo.view.fragments.SettingsFragment"
+        android:label="Settings" />
 
     <fragment
         android:id="@+id/containerFragment"
-        android:name="com.kl3jvi.sysinfo.view.fragments.ContainerFragment"
-        android:label="SysInfo">
+        android:name="com.monitor.deviceinfo.view.fragments.ContainerFragment"
+        android:label="@string/app_name">
         <action
             android:id="@+id/action_dashboard_to_settingsFragment"
             app:destination="@id/settingsFragment" />

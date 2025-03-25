@@ -19,3 +19,7 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+
+-keep class android.media.LoudnessCodecController { *; }
+-keep class android.media.LoudnessCodecController$OnLoudnessCodecUpdateListener { *; }
+-keep class com.google.android.gms.internal.ads.** { *; }

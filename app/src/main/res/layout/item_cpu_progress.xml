@@ -5,7 +5,7 @@
 
         <variable
             name="cpuInfo"
-            type="com.kl3jvi.sysinfo.data.model.CpuInfo.Frequency" />
+            type="com.monitor.deviceinfo.data.model.CpuInfo.Frequency" />
 
         <variable
             name="position"
